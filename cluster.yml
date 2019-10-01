@@ -1,0 +1,14 @@
+cluster_name: rancher
+
+kubernetes_version: "v1.15.2-rancher1-1"
+
+nodes:
+  - address: 192.168.50.6
+    user: vagrant
+    role:
+      - controlplane
+      - etcd
+      - worker
+
+ingress:
+  provider: nginx
