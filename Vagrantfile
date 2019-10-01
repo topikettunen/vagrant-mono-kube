@@ -58,7 +58,7 @@ Vagrant.configure('2') do |config|
                                   owner: "vagrant",
                                   group: "vagrant",
                                   mount_options: ["uid=900","gid=900","ro","dmode=0700","fmode=0600"]
-        override.vm.network "private_network", ip: "192.168.50.6"
+        override.vm.network "private_network", ip: node[:ip]
       end
     end
     
